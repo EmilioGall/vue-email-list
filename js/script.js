@@ -76,9 +76,9 @@ createApp({
 
       cleanArrEmailList: function () {
 
-         arrEmailList = [];
+         this.arrEmailList = [];
 
-         // console.log("arrEmailList", this.arrEmailList);
+         console.log("arrEmailList", this.arrEmailList);
 
       },
 

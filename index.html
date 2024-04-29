@@ -27,7 +27,9 @@
             Vue Email List Generator
          </h1>
 
-         <ul class="list-group col-8 mt-4">
+         <ul 
+         class="list-group col-8 mt-4"
+         v-if="arrEmailList.length === 10">
 
             <li class="list-group-item d-flex justify-content-between align-items-center"
             v-for="(email, emailIndex) in arrEmailList">
