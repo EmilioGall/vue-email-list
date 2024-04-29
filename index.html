@@ -29,10 +29,11 @@
 
          <ul class="list-group col-8 mt-4">
 
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-               A third list item
+            <li class="list-group-item d-flex justify-content-between align-items-center"
+            v-for="(email, emailIndex) in arrEmailList">
+               {{ email }}
 
-               <span class="badge text-bg-primary rounded-pill">1</span>
+               <span class="badge text-bg-primary rounded-pill">{{emailIndex + 1 }}</span>
 
             </li>
 
@@ -45,7 +46,7 @@
                <button 
                type="button" 
                class="btn btn-primary"
-               @click="generateEmail">
+               @click="fillArrEmailList">
                   Generate email list
                </button>
    
