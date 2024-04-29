@@ -42,11 +42,17 @@
 
             <div class="btn-group col-4" role="group" aria-label="Basic outlined example">
    
-               <button type="button" class="btn btn-primary">
+               <button 
+               type="button" 
+               class="btn btn-primary"
+               @click="generateEmail">
                   Generate email list
                </button>
    
-               <button type="button" class="btn btn-outline-primary">
+               <button 
+               type="button" 
+               class="btn btn-outline-primary"
+               @click="cleanArrEmailList">
                   Clean email list
                </button>
    
